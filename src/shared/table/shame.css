@@ -1,0 +1,3 @@
+.table__header:has(.table__header--big) {
+    width: 600px;
+}

@@ -1,0 +1,21 @@
+@import "primereact/resources/themes/viva-dark/theme.css";
+@import 'primeicons/primeicons.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    @apply h-full w-full m-0 p-0
+}
+
+canvas {
+    @apply !h-full !w-full;
+}
+
+.p-card-body:has(canvas),
+.p-chart:has(canvas),
+.p-card-content:has(canvas) {
+    @apply !h-full !w-full;
+}
+
